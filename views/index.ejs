@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= typeof title === 'undefined' ? 'weimob': title %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/antd.css">
+
+</head>
+<body>
+  <section role="main" class="react-container">
+    <div><%- typeof app == 'undefined' ? '' : app %></div>
+  </section>
+  <script>
+    try {
+      //通过render，将应用的state由ejs注入到全局对象__REDUX_STATE__中，用于redux的state初始化
+      window.__REDUX_STATE__ = <%- typeof reduxData === 'undefined' ? 'no data' : JSON.stringify(reduxData) %>;
+    } catch (e) {
+      console.warn('error in getting server redux data');
+    }
+  </script>
+</body>
+<script><%- typeof stateData === 'undefined'?'':stateData%></script>
+
+<script src="/react-15.1.0.min.js"></script>
+<script src="/react-dom-15.1.0.min.js"></script>
+<script src="/ReactRouter-2.4.1.min.js"></script>
+<script src="/react-redux-4.4.5.min.js"></script>
+<script src="/antd-2.8.1.min.js"></script>
+
+<!-- build:js -->
+<script type="text/javascript" src="/common.js" async></script>
+<script type="text/javascript" src="/main.js" async></script>
+<!-- endbuild -->
+</html>

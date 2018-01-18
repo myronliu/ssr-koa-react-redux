@@ -1,0 +1,14 @@
+{
+ "presets": ["es2015", "stage-0", "react"],
+  "plugins": [
+    "transform-strict-mode",
+    "transform-es2015-modules-commonjs",
+    "transform-es2015-spread",
+    "transform-es2015-destructuring",
+    "transform-es2015-parameters",
+
+    "add-module-exports", 
+    "transform-runtime",
+    "transform-decorators-legacy"
+  ]
+}

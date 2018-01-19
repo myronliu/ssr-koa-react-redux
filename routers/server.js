@@ -6,7 +6,7 @@ import routes from '../app/router'
 
 function _match(location){
   return new Promise((resolve, reject)=>{
-    match(location, (error, redirectLocation,renderProps)=>{
+    match(location, (error, redirectLocation,renderProps)=>{// 异步函数
       if(error){
         return reject(error);
       }
@@ -32,7 +32,7 @@ var server = async (ctx, next) => {
   }catch(e){
     console.error('Server-Render Error Occurs: %s', e.stack)
     await ctx.render('500', {
-      msg: ctx.app.env === 'development' ? e.message : false
+      app: ctx.app.env === 'development' ? e.message : "Server Error"
     })
   }
 }

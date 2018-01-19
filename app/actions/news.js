@@ -4,7 +4,7 @@ export const GET_NEWS_REQUEST = 'GET_NEWS_REQUEST'
 export const GET_NEWS_SUCCEED = 'GET_NEWS_SUCCEED'
 export const GET_NEWS_FAILED = 'GET_NEWS_FAILED'
 
-const fetchStateUrl = process.env.BROSWER ? '/api/mockjsdata/65/promotion/groupon/client/groupon/details' : 'http://rap.weimob.com/mockjsdata/65/promotion/groupon/client/groupon/details';
+const fetchStateUrl = process.env.BROSWER ? '/api/open/api/weather/json.shtml?city=北京' : 'http://www.sojson.com/open/api/weather/json.shtml?city=北京';
 
 export function fetchNews(state){
   return (dispatch) => {

@@ -7,7 +7,7 @@ export const SERVER_STATE_FAILED = 'SERVER_STATE_FAILED'
 //服务端使用http.request方法需要完整路径
 //客户端使用ajax，使用相对路径
 //这里也可以使用 __SERVER__ ＝ typeof window !== 'undefined'
-const fetchHomeUrl = 'http://rap.weimob.com/mockjsdata/65/promotion/groupon/client/groupon/details2';//'http://localhost:3010/api/test';
+const fetchHomeUrl = process.env.BROSWER ? '/api/open/api/weather/json.shtml?city=北京' : 'http://www.sojson.com/open/api/weather/json.shtml?city=北京';
 
 function fetchHome(){
   return dispatch => {

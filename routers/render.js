@@ -17,6 +17,7 @@ export default async (ctx, next, renderProps) => {
 
   // 遍历路由中注册的组件，创建加载数据请求，至数组中
   for (let component of renderProps.components) {
+    // console.log(component && component.WrappedComponent)
     if (component && component.WrappedComponent && component.WrappedComponent.fetch) {
       console.log("ServerRender--->" + component.WrappedComponent.ServerRender)
       if(component.WrappedComponent.ServerRender){

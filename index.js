@@ -29,7 +29,7 @@ app.on('error', function(err){
 
 import renderRouter from './routers/server';
 app.use(proxy({
-  host:  'http://rap.weimob.com',
+  host:  'http://www.sojson.com',
   match: /^\/api\//,
   map: function(path) { return path.replace('/api/', '/'); }
 }));

@@ -10,7 +10,7 @@ export default (
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="news" component={News} />
-      <Redirect from="/test_re" to="/news" />
+      <Redirect from="test_re" to="/news" />
     </Route>
   </Router>
 )

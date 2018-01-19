@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.build.js && babel-node ./index.js",
-    "ali": "babel-node ./index.js"
+    "start": "webpack --config webpack.build.js && babel-node ./index.js"
   },
   "author": "myronliu",
   "license": "ISC",

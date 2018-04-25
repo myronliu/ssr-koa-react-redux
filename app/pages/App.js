@@ -11,7 +11,7 @@ class App extends Component {
         <div className="ant-layout-top">
           <div className="ant-layout-header">
             <div className="ant-layout-wrapper">
-              <div className="ant-layout-logo"><img src="//7xi480.com1.z0.glb.clouddn.com/avatar100.jpg" width="50" /></div>
+              <div className="ant-layout-logo"><img src="/imgs/avatar100.jpg" width="50" /></div>
               <Menu theme="dark" mode="horizontal" style={{lineHeight: '64px'}} selectedKeys={[currentMenu]}>
                 <Menu.Item key="home"><Link to="/" >Home</Link></Menu.Item>
                 <Menu.Item key="news"><Link to="/news" >News</Link></Menu.Item>

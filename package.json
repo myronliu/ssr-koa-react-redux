@@ -31,7 +31,7 @@
     "depd": "^1.1.0",
     "ejs": "^2.4.1",
     "extract-text-webpack-plugin": "^2.1.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^2.1.2",
